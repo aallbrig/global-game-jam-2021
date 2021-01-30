@@ -362,6 +362,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &966528873 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 702591152173840727, guid: 7d949c1e9ad665a4c987f9b0a7e15d94,
+    type: 3}
+  m_PrefabInstance: {fileID: 8164193078813652242}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1434113471
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,6 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d44ba762e944dfadbd55214c752aeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startMenuUi: {fileID: 966528873}
   currentState: {fileID: 11400000, guid: 315fc07c12bf90346a740d6a056e0876, type: 2}
 --- !u!4 &1434113473
 Transform:
@@ -449,6 +456,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Start Menu UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 702591152173840727, guid: 7d949c1e9ad665a4c987f9b0a7e15d94,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6018881014940156812, guid: 7d949c1e9ad665a4c987f9b0a7e15d94,
         type: 3}
