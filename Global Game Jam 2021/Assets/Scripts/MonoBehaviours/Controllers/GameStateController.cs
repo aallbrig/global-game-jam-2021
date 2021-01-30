@@ -7,7 +7,10 @@ namespace MonoBehaviours.Controllers
     {
         [Header("User Interface")]
         public GameObject startMenuUi;
+        public GameObject gameOverUi;
+
         public void SetStartMenuActive(bool active) => startMenuUi.SetActive(active);
+        public void SetGameOverActive(bool active) => gameOverUi.SetActive(active);
 
 
         [Header("Finite State Machine")]
