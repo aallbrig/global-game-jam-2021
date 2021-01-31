@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 672afaf1415c4152b01ba784f212fa28, type: 3}
-  m_Name: Blockbuster employee first time dialogue
+  m_Name: Player has collected all videos
   m_EditorClassIdentifier: 
   leftCharacter: {fileID: 11400000, guid: 4e642bd21cb7ba945825daa78159f824, type: 2}
   rightCharacter: {fileID: 11400000, guid: 45790db476bc11842b90cd6d6b7e0dfe, type: 2}
@@ -18,3 +18,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 47787c5cd485d8f45b5f1c14d8f7d167, type: 2}
   - {fileID: 11400000, guid: 6da34874d6ef6284ebd4548079003ab7, type: 2}
   - {fileID: 11400000, guid: 968a5f71891ccd84ea6a9dfb8e6a1f6f, type: 2}
+  - {fileID: 11400000, guid: ced65603fa657cf45a90fdb806ebfee7, type: 2}
+  - {fileID: 11400000, guid: 6357192d6bfbf8e4e99bc2f2c9168454, type: 2}
+  - {fileID: 11400000, guid: 772408f2827c0e042895fc9860c6df59, type: 2}

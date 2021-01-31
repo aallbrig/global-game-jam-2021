@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using ScriptableObjects;
 using ScriptableObjects.EventSystem;
 using ScriptableObjects.RuntimeSets;
@@ -9,11 +10,14 @@ namespace MonoBehaviours.EventBroadcasters
     public class BroadcastDialogueSequenceOnTriggerEnter : MonoBehaviour
     {
         public DialogueSequenceGameEvent dialogueSequenceGameEvent;
-        public DialogueSequence sequence;
+        public DialogueSequence winDialogueSequence;
+        public DialogueSequence stillNeedMoreDialogueSequence;
         public GameObjectRuntimeSet player;
         public FloatVar sphereColliderRadius;
+        public BoolVar playerHasCollectedAllVideos;
         private SphereCollider _sphereCollider;
-        private bool _triggerEntered = false;
+        private bool _triggerEntered;
+        private IEnumerator _resetTrigger;
 
         private void Start()
         {
@@ -23,17 +27,26 @@ namespace MonoBehaviours.EventBroadcasters
 
         private void OnTriggerEnter(Collider other)
         {
-            if (_triggerEntered || !player.list.Contains(other.gameObject)) return;
+            if (_triggerEntered && _resetTrigger != null && !player.list.Contains(other.gameObject)) return;
+
             _triggerEntered = true;
-            // SUCCESS dialogue
-            dialogueSequenceGameEvent.Broadcast(sequence);
-            // NOT READY YET dialogue
+            _resetTrigger = ResetTrigger();
+            StartCoroutine(_resetTrigger);
+
+            if (playerHasCollectedAllVideos.value)
+                // SUCCESS dialogue
+                dialogueSequenceGameEvent.Broadcast(winDialogueSequence);
+            else
+                // NOT READY YET dialogue
+                dialogueSequenceGameEvent.Broadcast(stillNeedMoreDialogueSequence);
         }
 
-        private void OnTriggerExit(Collider other)
+        private IEnumerator ResetTrigger()
         {
-            if (player.list.Contains(other.gameObject))
-                _triggerEntered = false;
+            yield return new WaitForSeconds(16f);
+            _triggerEntered = false;
+            StopCoroutine(_resetTrigger);
+            _resetTrigger = null;
         }
     }
 }

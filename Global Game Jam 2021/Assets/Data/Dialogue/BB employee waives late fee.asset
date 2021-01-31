@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba8a9305c16949db8964b70e264ab158, type: 3}
+  m_Name: BB employee waives late fee
+  m_EditorClassIdentifier: 
+  text: Even though these videos are 10 years late, we're waiving your late fees
+  avatar: {fileID: 11400000, guid: 45790db476bc11842b90cd6d6b7e0dfe, type: 2}
+  animation: {fileID: 0}

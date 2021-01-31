@@ -11,6 +11,9 @@ namespace ScriptableObjects.Collectibles
     public class LostBlockbusterVideo : Collectible
     {
         public GameObjectRuntimeSet owners;
+        public GameObjectRuntimeSet collectibles;
+        public GameObjectRuntimeSet playerInventory;
+        public BoolVar hasCollectedAll;
         public Animation rikoAnimation;
         public List<FXEffect> effects;
 
@@ -29,7 +32,8 @@ namespace ScriptableObjects.Collectibles
             var inventory = collector.GetComponent<PlayerInventory>();
             inventory.Add(self);
 
-            // TODO: Add to player's collection
+            hasCollectedAll.value = playerInventory.list.Count == collectibles.list.Count;
+
             collector.GetComponent<NavMeshAgent>().isStopped = true;
             effects.ForEach(effect =>
             {

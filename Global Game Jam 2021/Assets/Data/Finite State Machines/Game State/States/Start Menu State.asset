@@ -17,4 +17,5 @@ MonoBehaviour:
   updateActions: []
   transitions: []
   leaveActions:
+  - {fileID: 11400000, guid: da2da490ff3759f409e1becc481a0b41, type: 2}
   - {fileID: 11400000, guid: 4e6c2769600930241ba8f29935012cf0, type: 2}
