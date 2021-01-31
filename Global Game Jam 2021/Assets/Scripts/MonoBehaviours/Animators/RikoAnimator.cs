@@ -13,15 +13,16 @@ namespace MonoBehaviours.Animators
         public FloatVar playerVelocity;
         public FloatVar playerCurrentHealth;
         private Animator _animator;
-        private int _currentAnimation;
+        public int currentAnimation;
+        public bool ignoreUpdate = false;
         private static readonly int Animation = Animator.StringToHash("animation");
 
         public void UpdateAnimation(int animationID)
         {
-            if (animationID != _currentAnimation)
+            if (animationID != currentAnimation)
             {
                 _animator.SetInteger(Animation, animationID);
-                _currentAnimation = animationID;
+                currentAnimation = animationID;
             }
         }
 
@@ -32,6 +33,8 @@ namespace MonoBehaviours.Animators
 
         private void Update()
         {
+            if (ignoreUpdate) return;
+
             if (playerCurrentHealth.value <= 0)
             {
                 UpdateAnimation(death.value);

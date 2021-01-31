@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Lost Blockbuster Video
   m_EditorClassIdentifier: 
   owners: {fileID: 11400000, guid: 1a261785fdca0934fa82323447704227, type: 2}
+  rikoAnimation: {fileID: 11400000, guid: 508ec78f96dddb343ac387d548e1b9bd, type: 2}
