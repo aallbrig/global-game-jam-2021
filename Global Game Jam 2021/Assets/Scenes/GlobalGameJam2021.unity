@@ -646,7 +646,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-195062
+  m_Name: pb_Mesh76512
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1994,7 +1994,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh62686
+  m_Name: pb_Mesh76776
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7603,7 +7603,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-196838
+  m_Name: pb_Mesh76422
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7772,6 +7772,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7837,7 +7838,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.34771407, y: -0.5081016, z: 0.23488654, w: 0.75216764}
+  m_LocalRotation: {x: 0.34957093, y: -0.50210416, z: 0.23211406, w: 0.7561843}
   m_LocalPosition: {x: 3.5, y: -0.5, z: 1.1499999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -7878,6 +7879,15 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!45 &963194230
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 1065b432639a84123a07ea43fe5ba4c9, type: 2}
 --- !u!1 &966528873 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 702591152173840727, guid: 7d949c1e9ad665a4c987f9b0a7e15d94,
@@ -8070,7 +8080,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-196692
+  m_Name: pb_Mesh76362
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8233,7 +8243,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-195974
+  m_Name: pb_Mesh77068
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12686,7 +12696,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762702576}
-  m_LocalRotation: {x: 0.34771407, y: -0.5081016, z: 0.23488654, w: 0.75216764}
+  m_LocalRotation: {x: 0.34957093, y: -0.50210416, z: 0.23211406, w: 0.7561843}
   m_LocalPosition: {x: 3.5, y: -0.5, z: 1.1499999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
