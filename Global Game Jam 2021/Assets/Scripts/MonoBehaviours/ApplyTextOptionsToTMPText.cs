@@ -14,8 +14,7 @@ namespace MonoBehaviours
         private void ApplyTextOptions()
         {
             if (_text != null) _text.text = text.value;
-            // TODO: Fix!
-            // _text.color = textColor.value;
+            _text.color = textColor.value;
         }
         private void Start()
         {

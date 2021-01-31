@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ee4a1e73a3495383ec77f36a91e9c4, type: 3}
   m_Name: UI button normal color
   m_EditorClassIdentifier: 
-  value: {r: 0.96149474, g: 1, b: 0.7877358, a: 1}
+  value: {r: 1, g: 1, b: 1, a: 1}

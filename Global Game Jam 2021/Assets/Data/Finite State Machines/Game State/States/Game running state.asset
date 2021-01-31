@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 552aef1ad3a143b5944fa0dfe433c0d5, type: 3}
   m_Name: Game running state
   m_EditorClassIdentifier: 
-  startActions: []
+  startActions:
+  - {fileID: 11400000, guid: b87e1234ee1ae524199516f88fce9f7d, type: 2}
   updateActions: []
   transitions:
   - decision: {fileID: 11400000, guid: 0e7bd1f0d05cbe041a3cf601815b6681, type: 2}
     trueState: {fileID: 11400000, guid: 42535fcc13aa813498557c6463713109, type: 2}
-  leaveActions: []
+  leaveActions:
+  - {fileID: 11400000, guid: 27266f0edc0b7a04abf83b344c526478, type: 2}
