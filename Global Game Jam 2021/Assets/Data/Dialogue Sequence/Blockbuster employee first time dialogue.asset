@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Blockbuster employee first time dialogue
   m_EditorClassIdentifier: 
   leftCharacter: {fileID: 11400000, guid: 4e642bd21cb7ba945825daa78159f824, type: 2}
-  righterCharacter: {fileID: 11400000, guid: 45790db476bc11842b90cd6d6b7e0dfe, type: 2}
+  rightCharacter: {fileID: 11400000, guid: 45790db476bc11842b90cd6d6b7e0dfe, type: 2}
   dialogue:
   - {fileID: 11400000, guid: 47787c5cd485d8f45b5f1c14d8f7d167, type: 2}
+  - {fileID: 11400000, guid: 6da34874d6ef6284ebd4548079003ab7, type: 2}
+  - {fileID: 11400000, guid: 968a5f71891ccd84ea6a9dfb8e6a1f6f, type: 2}

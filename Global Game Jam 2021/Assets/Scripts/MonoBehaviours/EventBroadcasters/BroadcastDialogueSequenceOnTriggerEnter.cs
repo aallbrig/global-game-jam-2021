@@ -12,6 +12,7 @@ namespace MonoBehaviours.EventBroadcasters
         public GameObjectRuntimeSet player;
         public FloatVar sphereColliderRadius;
         private SphereCollider _sphereCollider;
+        private bool _triggerEntered = false;
 
         private void Start()
         {
@@ -21,11 +22,20 @@ namespace MonoBehaviours.EventBroadcasters
 
         private void OnTriggerEnter(Collider other)
         {
-            if (player.list.Contains(other.gameObject))
+            if (!_triggerEntered && player.list.Contains(other.gameObject))
             {
+                _triggerEntered = true;
                 // SUCCESS dialogue
                 dialogueSequenceGameEvent.Broadcast(sequence);
                 // NOT READY YET dialogue
+            }
+        }
+
+        private void OnTriggerLeave(Collider other)
+        {
+            if (player.list.Contains(other.gameObject))
+            {
+                _triggerEntered = false;
             }
         }
     }

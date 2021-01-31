@@ -7,7 +7,7 @@ namespace ScriptableObjects
     public class DialogueSequence : ScriptableObject
     {
         public Avatar leftCharacter;
-        public Avatar righterCharacter;
+        public Avatar rightCharacter;
         public List<Dialogue> dialogue;
     }
 }
