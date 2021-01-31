@@ -16,6 +16,8 @@ namespace MonoBehaviours.Controllers
         public TextMeshProUGUI leftText;
         public TextMeshProUGUI rightText;
         public GameEvent dialogueSequenceComplete;
+        public GameEvent gameWon;
+        public BoolVar playerHasCollectedAllVideos;
         private DialogueSequence _dialogueSequence;
         private GameObject _leftCharacter;
         private GameObject _rightCharacter;
@@ -55,6 +57,7 @@ namespace MonoBehaviours.Controllers
         private void BroadcastDialogueSequenceComplete()
         {
             if (dialogueSequenceComplete != null) dialogueSequenceComplete.Broadcast();
+            if (playerHasCollectedAllVideos.value) gameWon.Broadcast();
         }
 
         private void HandleDialogueFrame()

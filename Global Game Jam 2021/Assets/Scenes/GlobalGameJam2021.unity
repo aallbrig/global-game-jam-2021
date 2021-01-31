@@ -1117,7 +1117,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh15242
+  m_Name: pb_Mesh54466
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2129,7 +2129,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.34814662, y: -0.5067138, z: 0.23424502, w: 0.7531032}
+  m_LocalRotation: {x: 0.34814656, y: -0.5067138, z: 0.23424503, w: 0.75310314}
   m_LocalPosition: {x: -0.29669046, y: -0.5, z: 1.9375002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -5014,6 +5014,7 @@ GameObject:
   - component: {fileID: 1434113474}
   - component: {fileID: 1434113475}
   - component: {fileID: 1434113476}
+  - component: {fileID: 1434113477}
   m_Layer: 0
   m_Name: Game State Controller
   m_TagString: Untagged
@@ -5127,6 +5128,35 @@ MonoBehaviour:
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: cd424ddc9412ddc42a76ef3b89c086d9,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableObjects.FiniteStateMachines.GameState.State,
+            Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1434113477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434113471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed3ac8b5e8124ca094e6853b1c971663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 4322fe1b9f5c68f4ba96eab4797362ff, type: 2}
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1434113472}
+        m_MethodName: TransitionToState
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 42535fcc13aa813498557c6463713109,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: ScriptableObjects.FiniteStateMachines.GameState.State,
             Assembly-CSharp
@@ -5867,6 +5897,9 @@ MonoBehaviour:
   rightText: {fileID: 1287694780}
   dialogueSequenceComplete: {fileID: 11400000, guid: 9afe412cc2c13594c87310029befb911,
     type: 2}
+  gameWon: {fileID: 11400000, guid: 4322fe1b9f5c68f4ba96eab4797362ff, type: 2}
+  playerHasCollectedAllVideos: {fileID: 11400000, guid: b1df481d6d3970c4184c5f400bdb4f40,
+    type: 2}
 --- !u!4 &1694850303
 Transform:
   m_ObjectHideFlags: 0
@@ -6316,7 +6349,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1762702576}
-  m_LocalRotation: {x: 0.34814662, y: -0.5067138, z: 0.23424502, w: 0.7531032}
+  m_LocalRotation: {x: 0.34814656, y: -0.5067138, z: 0.23424503, w: 0.75310314}
   m_LocalPosition: {x: -0.29669046, y: -0.5, z: 1.9375002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6545,36 +6578,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &1980085211
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1980085212}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1980085212
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1980085211}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.63, y: 0, z: 20.78}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &2092365548
 GameObject:
   m_ObjectHideFlags: 0
@@ -6671,7 +6674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2146967154
 Transform:
   m_ObjectHideFlags: 0
