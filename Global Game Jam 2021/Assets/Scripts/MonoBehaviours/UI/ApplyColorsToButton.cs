@@ -1,9 +1,8 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using Color = ScriptableObjects.Color;
 
-namespace MonoBehaviours
+namespace MonoBehaviours.UI
 {
     public class ApplyColorsToButton : MonoBehaviour
     {

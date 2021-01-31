@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using Color = ScriptableObjects.Color;
 
-namespace MonoBehaviours
+namespace MonoBehaviours.UI
 {
     public class ApplyTextOptionsToTMPText : MonoBehaviour
     {
