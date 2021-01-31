@@ -1,5 +1,5 @@
 ﻿using System.Collections;
-using MonoBehaviours.Animators;
+using System.Collections.Generic;
 using ScriptableObjects.RuntimeSets;
 using UnityEngine;
 using UnityEngine.AI;
@@ -11,6 +11,7 @@ namespace ScriptableObjects.Collectibles
     {
         public GameObjectRuntimeSet owners;
         public Animation rikoAnimation;
+        public List<FXEffect> effects;
 
         public override void Apply(GameObject self, GameObject collector)
         {
@@ -27,13 +28,26 @@ namespace ScriptableObjects.Collectibles
 
             // TODO: Add to player's collection
             collector.GetComponent<NavMeshAgent>().isStopped = true;
+            effects.ForEach(effect =>
+            {
+                var effectInstance = Instantiate(effect.effectPrefab, collector.transform);
+                effectInstance.transform.position += effect.offset.value;
+                collector.GetComponent<MonoBehaviour>().StartCoroutine(RemoveInstanceAfter(effectInstance, effect.effectLiveInSeconds));
+            });
+
             if (rikoAnimation != null)
             {
                 yield return rikoAnimation.Animate(collector);
             }
             collector.GetComponent<NavMeshAgent>().isStopped = false;
 
-            Destroy(self);
+            self.SetActive(false);
+        }
+
+        private IEnumerator RemoveInstanceAfter(GameObject instance, float seconds)
+        {
+            yield return new WaitForSeconds(seconds);
+            Destroy(instance);
         }
     }
 }
