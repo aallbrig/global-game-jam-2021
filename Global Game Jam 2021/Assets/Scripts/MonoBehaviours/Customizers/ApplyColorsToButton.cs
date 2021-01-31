@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using Color = ScriptableObjects.Color;
 
-namespace MonoBehaviours.UI
+namespace MonoBehaviours.Customizers
 {
     public class ApplyColorsToButton : MonoBehaviour
     {
