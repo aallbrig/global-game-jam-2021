@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 552aef1ad3a143b5944fa0dfe433c0d5, type: 3}
   m_Name: Dialogue state
   m_EditorClassIdentifier: 
-  startActions: []
+  startActions:
+  - {fileID: 11400000, guid: 0b7f046ba1751e94c8b0033c03c06917, type: 2}
   updateActions: []
-  transitions: []
-  leaveActions: []
+  transitions:
+  - decision: {fileID: 11400000, guid: 0e7bd1f0d05cbe041a3cf601815b6681, type: 2}
+    trueState: {fileID: 11400000, guid: cd424ddc9412ddc42a76ef3b89c086d9, type: 2}
+  leaveActions:
+  - {fileID: 11400000, guid: 3cf662ae56e4e3c43a05da7a71def6ec, type: 2}

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Game over state
   m_EditorClassIdentifier: 
   startActions:
-  - {fileID: 11400000, guid: 97bd59cc279ac3f4f8849a843dfde375, type: 2}
+  - {fileID: 11400000, guid: af203893876455e4f9c4e9a2dc82dd98, type: 2}
   updateActions: []
   transitions:
   - decision: {fileID: 11400000, guid: 0e7bd1f0d05cbe041a3cf601815b6681, type: 2}
     trueState: {fileID: 11400000, guid: 315fc07c12bf90346a740d6a056e0876, type: 2}
   leaveActions:
-  - {fileID: 11400000, guid: 3346d7fd33a72634aa58cdeb93faeaf7, type: 2}
+  - {fileID: 11400000, guid: efe5744854e7e3c4b975a896bc307acd, type: 2}

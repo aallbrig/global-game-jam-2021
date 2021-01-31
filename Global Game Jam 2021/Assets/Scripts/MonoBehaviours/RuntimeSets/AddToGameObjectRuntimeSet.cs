@@ -1,4 +1,5 @@
-﻿using ScriptableObjects.RuntimeSets;
+﻿using System;
+using ScriptableObjects.RuntimeSets;
 using UnityEngine;
 
 namespace MonoBehaviours.RuntimeSets
@@ -8,6 +9,7 @@ namespace MonoBehaviours.RuntimeSets
         public GameObjectRuntimeSet runtimeSet;
 
         private void OnEnable() => runtimeSet.Add(gameObject);
-        private void OnDisable() => runtimeSet.Remove(gameObject);
+
+        private void OnDestroy() => runtimeSet.Remove(gameObject);
     }
 }

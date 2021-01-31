@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace ScriptableObjects.FiniteStateMachines.GameState.Decisions
 {
-    [CreateAssetMenu(fileName = "new Keyboard Button Down", menuName = "GGJ2021/GameState/GameStateDecision/KeyboardKeyDown", order = 0)]
+    [CreateAssetMenu(fileName = "new Keyboard Button Down", menuName = "GGJ2021/GameState/Decisions/KeyboardKeyDown", order = 0)]
     public class KeyboardKeyDown : Decision
     {
         public KeyCode keyCode;

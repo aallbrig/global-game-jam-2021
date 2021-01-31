@@ -5,18 +5,6 @@ namespace MonoBehaviours.Controllers
 {
     public class GameStateController : MonoBehaviour
     {
-        [Header("User Interface")]
-        public GameObject startMenuUi;
-        public GameObject gameOverUi;
-
-        public void SetStartMenuActive(bool active) => startMenuUi.SetActive(active);
-        public void SetGameOverActive(bool active) => gameOverUi.SetActive(active);
-
-        [Header("Game Objects")]
-        public GameObject level;
-
-        public void SetLevelActive(bool active) => level.SetActive(active);
-
         [Header("Finite State Machine")]
         public State currentState;
         private State _startingState;

@@ -15,5 +15,4 @@ MonoBehaviour:
   owners: {fileID: 11400000, guid: 1a261785fdca0934fa82323447704227, type: 2}
   rikoAnimation: {fileID: 11400000, guid: 508ec78f96dddb343ac387d548e1b9bd, type: 2}
   effects:
-  - {fileID: 11400000, guid: ea819c61ac134474994a2e48142e7b53, type: 2}
   - {fileID: 11400000, guid: 9793488bd37a70c46b4aa4d2960bf3e3, type: 2}

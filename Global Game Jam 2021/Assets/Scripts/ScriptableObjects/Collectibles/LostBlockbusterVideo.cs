@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using MonoBehaviours.Collectibles;
 using ScriptableObjects.RuntimeSets;
 using UnityEngine;
 using UnityEngine.AI;
@@ -25,6 +26,8 @@ namespace ScriptableObjects.Collectibles
         private IEnumerator HandleCollectLostBlockbusterVideo(GameObject self, GameObject collector)
         {
             Debug.Log("[LostBlockbusterVideo] Collector is owner!");
+            var inventory = collector.GetComponent<PlayerInventory>();
+            inventory.Add(self);
 
             // TODO: Add to player's collection
             collector.GetComponent<NavMeshAgent>().isStopped = true;

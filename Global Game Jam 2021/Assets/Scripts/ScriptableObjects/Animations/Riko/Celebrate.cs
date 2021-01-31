@@ -12,6 +12,7 @@ namespace ScriptableObjects.Animations.Riko
         public StringVar rikoHappy;
         public float pauseAfterJump = 1.0f;
         public float pauseAfterCute = 1.0f;
+
         public override IEnumerator Animate(GameObject gameObject)
         {
             var rikoAnimator = gameObject.GetComponentInChildren<RikoAnimator>();
