@@ -1,7 +1,5 @@
-﻿using ScriptableObjects;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
-using Avatar = ScriptableObjects.Avatar;
 
 namespace MonoBehaviours.Controllers
 {
@@ -11,9 +9,6 @@ namespace MonoBehaviours.Controllers
         [HideInInspector] public Transform _transform;
         public Transform destination;
         public Transform start;
-        public FloatVar playerVelocity;
-
-        private void Update() => playerVelocity.value = agent.velocity.magnitude;
 
         private void OnEnable()
         {
