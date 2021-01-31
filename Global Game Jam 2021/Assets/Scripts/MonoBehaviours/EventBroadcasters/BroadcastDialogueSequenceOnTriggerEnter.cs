@@ -1,4 +1,5 @@
-﻿using ScriptableObjects;
+﻿using System;
+using ScriptableObjects;
 using ScriptableObjects.EventSystem;
 using ScriptableObjects.RuntimeSets;
 using UnityEngine;
@@ -22,21 +23,17 @@ namespace MonoBehaviours.EventBroadcasters
 
         private void OnTriggerEnter(Collider other)
         {
-            if (!_triggerEntered && player.list.Contains(other.gameObject))
-            {
-                _triggerEntered = true;
-                // SUCCESS dialogue
-                dialogueSequenceGameEvent.Broadcast(sequence);
-                // NOT READY YET dialogue
-            }
+            if (_triggerEntered || !player.list.Contains(other.gameObject)) return;
+            _triggerEntered = true;
+            // SUCCESS dialogue
+            dialogueSequenceGameEvent.Broadcast(sequence);
+            // NOT READY YET dialogue
         }
 
-        private void OnTriggerLeave(Collider other)
+        private void OnTriggerExit(Collider other)
         {
             if (player.list.Contains(other.gameObject))
-            {
                 _triggerEntered = false;
-            }
         }
     }
 }

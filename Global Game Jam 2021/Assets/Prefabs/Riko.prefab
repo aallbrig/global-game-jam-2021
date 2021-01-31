@@ -4981,7 +4981,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transformUpdate: {fileID: 0}
   scaleUpdate: {fileID: 11400000, guid: a46c50df23e012f4589bc85ad9fbdc22, type: 2}
-  rotationUpdate: {fileID: 11400000, guid: f53836f2aaab3b44c9a448b639a04ba5, type: 2}
+  rotationUpdate: {fileID: 11400000, guid: 6b2f509462fb0e44a8500a8329471cf2, type: 2}
 --- !u!1 &4492444874277435362
 GameObject:
   m_ObjectHideFlags: 0

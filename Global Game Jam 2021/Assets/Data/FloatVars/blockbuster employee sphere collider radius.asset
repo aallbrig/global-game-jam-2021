@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e6511dc27b46e7a32a812d3eb89b7c, type: 3}
   m_Name: blockbuster employee sphere collider radius
   m_EditorClassIdentifier: 
-  value: 2
+  value: 1

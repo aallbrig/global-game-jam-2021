@@ -77,9 +77,6 @@ namespace MonoBehaviours.Controllers
                 if (dialogue.animation)
                     StartCoroutine(dialogue.animation.Animate(_rightCharacter));
             }
-            if (dialogue.animation != null)
-            {
-            }
         }
 
         private void HandleDialogueSequenceProgress()
@@ -93,6 +90,11 @@ namespace MonoBehaviours.Controllers
 
         private void Update()
         {
+            if (_listenForInput)
+            {
+                ApplyCustomizations(_leftCharacter);
+                ApplyCustomizations(_rightCharacter);
+            }
             if (_listenForInput && Input.GetKeyDown(progressDialogueKey))
                 HandleDialogueSequenceProgress();
         }
