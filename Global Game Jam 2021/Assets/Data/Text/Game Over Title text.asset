@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d965e7215f4c466a898732dfb926da4c, type: 3}
   m_Name: Game Over Title text
   m_EditorClassIdentifier: 
-  value: Game Over!
+  value: You did it!
