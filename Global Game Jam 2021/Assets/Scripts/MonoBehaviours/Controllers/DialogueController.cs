@@ -82,7 +82,7 @@ namespace MonoBehaviours.Controllers
             }
         }
 
-        private void HandleDialogueSequenceProgress()
+        public void HandleDialogueSequenceProgress()
         {
             _index += 1;
             if (_index >= _indexMax)
